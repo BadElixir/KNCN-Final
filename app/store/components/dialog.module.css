@@ -1,0 +1,288 @@
+.dialogBackground {
+    background-color: #80808060;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.mg12rem{
+    margin-right: 12rem;
+}
+.editDialog {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 0.1rem solid #c2c2c2;
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-right: 15px;
+    font-weight: bold;
+    overflow-y: scroll;
+    max-height: 40rem;
+}
+.dialogColumn{
+    display: flex;
+    
+}
+.dialogColumn >h2{
+    flex-direction: column;
+}
+
+.editDialog > h2 {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.editDialog > input {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 30rem;
+    border-radius: 40px;
+    min-height: 4vh;
+    padding: 10px 15px;
+    margin-top: 8px;
+    box-shadow: 0 2px 4px darkslategray;
+}
+
+.editDialog > button {
+    border-radius: 0.25rem;
+    width: 30rem;
+    padding: 0.25rem;
+    background-color: transparent;
+    border-style: solid;
+    color: black;
+}
+
+.editDialog > button:hover {
+    color: green;
+}
+
+.editDialog > button:active {
+    color: darkgreen;
+}
+
+.editDialog input::-webkit-outer-spin-button,
+.editDialog input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.editDialog input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.unitContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.unitContainer > div {
+    margin-right: 1rem;
+}
+
+.unitContainer input {
+    font-size: 1rem;
+    width: 6rem;
+    margin-bottom: 0rem;
+    margin-top: 8px;
+    min-height: 4vh;
+    border-radius: 40px;
+    padding: 10px 15px;
+    background-color: rgba(17, 17, 17, 0.1);
+    color: black;
+    box-shadow: 0 0 2px darkslategray;
+}
+
+.hiddenContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.hiddenContainer > div {
+    margin-right: 1rem;
+}
+
+.hiddenContainer input {
+    font-size: 1rem;
+    width: 6rem;
+    margin-bottom: 0rem;
+    margin-top: 8px;
+    min-height: 4vh;
+    border-radius: 40px;
+    padding: 10px 15px;
+    background-color: rgba(255, 0, 0, 0.4);
+    color: black;
+    box-shadow: 0 0 2px darkslategray;
+}
+
+.upload {
+    font-size: 1rem;
+    width: 6rem;
+    margin-bottom: 0rem;
+    margin-top: 8px;
+    min-height: 4vh;
+    border-radius: 40px;
+    padding: 10px 15px;
+    background-color: rgba(17, 17, 17, 0.1);
+    color: black;
+    box-shadow: 0 0 2px darkslategray;
+    align-self: flex-end;
+}
+
+.upload:hover {
+    color: green;
+}
+
+.upload:active {
+    color: darkgreen;
+}
+
+.remove {
+    background-color: transparent;
+    font-size: 2rem;
+    height: 2.75rem;
+    width: 3rem;
+    border-radius: 0.25rem;
+    align-self: flex-end;
+    border-width: 0rem;
+}
+
+.remove:hover {
+    color: red;
+}
+
+.remove:active {
+    color: darkred;
+}
+
+.delDialog {
+    background-color: #f2f2f2;
+    border: 0.1rem solid #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.delDialog > h2 {
+    margin-bottom: 1rem;
+}
+
+.buttonContainer {
+    padding-top: 1rem;
+    display: flex;
+}
+
+.buttonContainer > button {
+    margin: 0.5rem;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 40px;
+    box-shadow: 0 0 2px darkslategray;
+}
+
+.editDialog > .buttonContainer {
+    margin-left: 275px;
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    max-width: 30rem;
+    color: red;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+@media (prefers-color-scheme: dark) {
+    .editDialog {
+        background-color: white;
+        color: black
+    }
+    .editDialog > input{
+        background-color: rgba(17, 17, 17, 0.1);
+        color:black;
+    }
+    .unitContainer > input{
+        background-color: rgba(17, 17, 17, 0.1);
+        color:black;
+    }
+    .delDialog {
+        background-color: black;
+    }
+    .buttonContainer > button {
+        background-color: rgb(17, 17, 17);
+    }
+    .remove {
+        color: black;
+    }
+}
+
+@media (max-width: 800px) {
+    .dialogBackground {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+    
+    .editDialog {
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: flex-start;
+        min-height: 100vh;
+        min-width: 100vw;
+
+        border-radius: 0rem;
+    }
+    
+    .editDialog > input {
+
+        width: calc(100vw - 4rem);
+    }
+    
+    .editDialog > button {
+
+        width: calc(100vw - 4rem);
+    }
+    
+    .unitContainer input {
+
+        width: calc((100vw - 10.5rem)/4);
+    }
+    
+    .unitContainer > button {
+
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    
+    .delDialog > h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttonContainer > button {
+        font-size: 1rem;
+    }
+}

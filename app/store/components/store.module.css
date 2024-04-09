@@ -1,0 +1,253 @@
+.store {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.container button {
+    background-color: cornflowerblue;
+    color: white;
+    margin-left: 0.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.container button:hover {
+    background-color: rgb(100, 100, 250);
+}
+
+.container button:active {
+    background-color: rgb(51, 51, 192);
+}
+.content{
+    display: flex;
+}
+.filterBackground {
+  background-color: #80808060;
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100vw; 
+}
+
+.filterPanel {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  background-color: white;
+}
+
+.filterHeader {
+  display: flex;
+  background-color: lightgray;
+  padding: 1rem;
+  height: 4rem;
+  justify-content: center;
+}
+
+.filterHeader > h2 {
+  flex: 1;
+}
+
+.filterHeader > button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.filterSection {
+  flex: 0.33;
+  padding: 1rem;
+  flex-direction: column;
+  display: flex;
+  border: 0.1rem solid #111111;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  max-height: 34rem;
+  background: #f2f2f2;
+}
+
+.filterSection > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.filterBox {
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 10rem;
+  border: none;
+  background-color: #c2c2c2;
+}
+
+.activeBox {
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 10rem;
+  border: none;
+  background-color: #a0a0a0;
+}
+
+.hidden {
+    display: none;
+}
+
+.searchBar {
+    flex: 1;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    width: 1rem;
+}
+
+.table {
+    table-layout: fixed;
+    border-spacing: 0;
+    flex: 1;
+    border: 0.1rem solid #111111;
+    overflow-y: scroll;
+}
+
+.tableDiv {
+    flex: 1;
+    flex-direction: row;
+    overflow: auto;
+    overflow-y: scroll;
+    max-height: calc(100vh - 10rem);
+}
+.tableHeader{
+    border: 0.1rem solid #111111;
+}
+.tableHeader th {
+    background-color: lightblue;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 2rem;
+}
+
+.tableBody > tr:nth-child(odd) {
+    background-color: white;
+    text-align: center;
+    height: 2rem;
+}
+
+.tableBody > tr:nth-child(even) {
+    background-color: lightcyan;
+    text-align: center;
+    height: 0.5rem;
+}
+
+.tableBody > tr > td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    max-height: 1rem;
+}
+
+.tableBody > tr > td > button {
+    background-color: transparent;
+    border-width: 0rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.tableBody > tr > td button:hover {
+    color: red;
+}
+
+.tableBody > tr > td button:active {
+    color: darkred;
+}
+
+@media (prefers-color-scheme: dark) {
+    .tableHeader th {
+        background-color: #000137;
+    }
+    
+    .tableBody > tr:nth-child(odd) {
+        background-color: rgb(27, 30, 45);
+    }
+    
+    .tableBody > tr:nth-child(even) {
+        background-color: black;
+    }
+    .filterHeader {
+        background-color: black;
+    }
+    .filterPanel {
+    background-color: gray;
+    }
+    .filterBox {
+    background-color: #000120;
+    }
+    .activeBox {
+    background-color: #000550;
+    }
+}
+
+.id {
+    width: 6rem;
+}
+.name{
+    width: 20rem;
+}
+.quantity {
+    width: 10rem;
+}
+
+.unitName {
+    width: 10rem;
+}
+
+.price {
+    width: 10rem;
+}
+
+.basePrice {
+    width: 10rem;
+}
+
+.weight {
+    width: 15rem;
+}
+
+.action {
+    width: 10rem;
+}
+
+@media (max-width: 800px) {
+    .id {
+        display: none;
+    }
+    .table tr td:nth-child(1) {
+        display: none;
+    }
+    .basePrice {
+        display: none;
+    }
+    .table tr td:nth-child(6) {
+        display: none;
+    }
+    .weight {
+        display: none;
+    }
+    .table tr td:nth-child(7) {
+        display: none;
+    }
+    .action {
+        width: 1rem;
+    }
+    .tableBody > tr > td > button {
+        padding: 0rem;
+        padding-right: 0.5rem;
+    }
+}

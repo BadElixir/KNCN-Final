@@ -1,0 +1,267 @@
+/* .generalStats {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+} */
+
+.outOfStock {
+    flex: 1;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.outOfStock > p {
+    font-size: 1.6rem;
+    padding: 0.25rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    color:#0000CD;
+    font-weight: 500;
+    
+}
+.salesReport {
+    flex: 1;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    flex-direction: column;
+    margin-left: 2rem;
+  
+}
+.salesReport > p {
+    font-size: 1.6rem;
+    padding: 0.25rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color:#0000CD;
+    font-weight: 500;
+}
+
+/* .stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    border: 0.1rem cornflowerblue solid;
+    border-radius: 2rem;
+} */
+
+.salesReportContainer {
+    flex: 1;
+    /* max-height: 3.75rem; */
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.salesReportInput p{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.salesReportContainer > div {
+    margin-right: 2rem;
+}
+
+.salesReportContainer > div > input {
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+
+.salesReportContainer > button {
+    font-size: 1rem;
+    padding: 0.25rem;
+    font-weight: bold;
+}
+
+.display, .profitDisplay {
+    flex: 1;
+    max-height: 50vh;
+    border-left: 0.1rem solid #A9A9A9;
+    border-right: 0.1rem solid #A9A9A9;
+    border-top: 0.1rem solid #A9A9A9;
+    border-radius: 0.3rem;
+    box-shadow: 0 2px 4px darkslategray;
+    overflow-y: scroll;
+}
+
+.display > div {
+    display: grid;
+    height: 3rem;
+    border-bottom: 0.1rem solid #A9A9A9;
+    justify-items: center;
+    grid-template-columns: 10% 70% 20%;
+    font-size: 1.15rem;
+    align-items: center;
+}
+
+.profitDisplay > div {
+    display: grid;
+    height: 3rem;
+    border-bottom: 0.1rem solid #A9A9A9;
+    justify-items: center;
+    grid-template-columns: 10% 30% 20% 20% 20%;
+    font-size: 1.15rem;
+    align-items: center;
+}
+
+.stickyHeader{
+    display: grid;
+    height: 3rem;
+    border-bottom: 0.1rem solid #A9A9A9;
+    justify-items: center;
+    grid-template-columns: 10% 30% 20% 20% 20%;
+    font-size: 1.15rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+.profitHeader {
+    display: grid;
+    height: 3rem;
+    border-bottom: 0.1rem solid #A9A9A9;
+    justify-items: center;
+    grid-template-columns: 10% 70% 20%;
+    font-size: 1.15rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+.fw500{
+    font-weight: 600;
+    font-size: 1.25;
+}
+
+.display > div > p {
+    margin-right: 1rem;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    .display {
+        background-color: #0e0e0e;
+    }
+} */
+.profitReport{
+    flex: 1;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.profitReport > p {
+    font-size: 1.6rem;
+    padding: 0.25rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    color:#0000CD;
+    font-weight: 500;
+}
+
+.profitReportContainer {
+    flex: 1;
+    /* max-height: 3.75rem; */
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1rem;
+}
+
+.profitReportContainer > div {
+    margin-right: 1rem;
+}
+
+.profitReportContainer > div > input {
+    font-size: 1rem;
+    padding: 0.25rem;
+}
+
+.profitReportContainer > button {
+    font-size: 1rem;
+    padding: 0.25rem;
+    font-weight: bold;
+}
+
+ /* Các style mới cho sidebar */
+ .sidebarSection{
+    width: 20rem;
+    padding-top: 2rem;
+    cursor: pointer;
+    border-right: 0.1rem solid#f2f2f2;
+ }
+ .sidebarTitle{
+    background: white;
+    height: 3rem;
+    color: #111111;
+    text-align: left;
+    border-left: 0.1rem solid #f2f2f2;
+    border-top: 0.1rem solid #f2f2f2;
+    border-bottom: 0.1rem solid #f2f2f2;
+   align-items: center;
+   display:flex;
+ }
+ .sidebarTitle p{
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    align-items: center;
+    font-weight: 600;
+ }
+.sidebar {
+    width: 18rem;
+
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 20rem;
+    border-right: 0.1rem solid #f2f2f2;
+}
+
+
+.sidebar li {
+    cursor: pointer;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border-bottom: 0.1rem solid #f2f2f2;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.sidebar li:hover {
+    background-color: #bbb;
+}
+
+.pageContainer {
+    display: flex;
+}
+
+.mainContent {
+    flex: 1;
+}
+.salesReportContainer button {
+    padding: 0.5rem 1rem;
+    height: 2rem;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .salesReportContainer button:hover {
+    background-color: rgb(51, 51, 192);
+  }
+  
